@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>System Architecture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="System Architecture Overview" />
+    <meta name="keywords" content="system architecture, technology stack, software design" />
+    <meta name="author" content="Your Name" />
+
+    <!-- 公共CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./assets/css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/prospect.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- 主题CSS -->
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <link href="./assets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/prospectCard.css">
+
+    <!-- 自定义样式 -->
+    <style>
+        body {
+            background-image: linear-gradient(180deg, rgba(65, 110, 235, 0.15) 0%, #ffffff 100%);
+            background-repeat: no-repeat;
+        }
+
+        .architecture-section {
+            padding: 5rem 0;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tech-stack {
+            margin-bottom: 3rem;
+        }
+
+        .tech-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .tech-item {
+            background-color: #f8f9fa;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 3rem 0;
+        }
+
+        .image-card {
+            width: 45%;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navigaation -->
+    <header class="header-area nav-overlay">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container" style="width: 100%;">
+                <a href="#" class="navbar-brand">Project Architecture</a>
+
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="./introduction.html" class="nav-item nav-link">Introduction</a></li>
+                        <li><a href="./architecture.html" class="nav-item nav-link">Architecture</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-item nav-link" data-toggle="dropdown">Project Progress Updates</a>
+                            <div class="dropdown-menu">
+                                <a href="./progress1.html" class="dropdown-item">Project Progress Updates
+                                    1</a>
+                                <a href="./progress2.html" class="dropdown-item">Project Progress Updates
+                                    2</a>
+                            </div>
+                        </li>
+
+                        <li><a href="#footer" class="nav-item nav-link">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- bread nav -->
+    <div style="height: 1.5rem;">
+        <ol class="breadcrumb" style="padding-left: 2rem;padding-top: 0;padding-bottom: 0;background: none;">
+            <li class="breadcrumb-item">
+                <a href="Main.html">Main Page</a>
+            </li>
+            <li class="breadcrumb-item">
+                Project Architecture
+            </li>
+
+        </ol>
+    </div>
+
+    <!-- 主体内容 -->
+    <section class="architecture-section text-center">
+        <div class="container">
+            <h1 style="color:rgba(116, 154, 236, 0.8); font-family:Stoked; margin-bottom: 1.5rem;">System Architecture
+                Overview</h1>
+
+            <div class="image-container">
+                <div class="image-card">
+                    <img src="./images/service architecture.png">
+                    <h6>System Service Architecture Diagram</h6>
+                </div>
+                <div class="image-card">
+                    <img src="./images/technical architecture.png">
+                    <h6>System Technical Architecture Diagram</h6>
+                </div>
+            </div>
+
+            <!-- 技术栈介绍 -->
+            <div class="tech-stack">
+                <h2 style="color:#2c3e50; margin-bottom: 2rem;">Overall System Technology Stack</h2>
+                <ul class="tech-list">
+                    <li class="tech-item">
+                        <strong>Development Framework:</strong> Spring Boot, Spring Cloud
+                    </li>
+                    <li class="tech-item">
+                        <strong>Container Technology:</strong> Docker, Kubernetes
+                    </li>
+                    <li class="tech-item">
+                        <strong>Continuous Integration:</strong> Maven, Jenkins
+                    </li>
+                    <li class="tech-item">
+                        <strong>Monitoring & Fault Tolerance:</strong> Skywalking, Sentinel
+                    </li>
+                    <li class="tech-item">
+                        <strong>Data Processing:</strong> MySQL, Kafka, Elasticsearch
+                    </li>
+                    <li class="tech-item">
+                        <strong>Gateway & Load Balancing:</strong> Spring Cloud Gateway, Nginx
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <!-- 问答模块技术 -->
+            <div class="tech-stack mt-5">
+                <h2 style="color:#2c3e50; margin-bottom: 2rem;">Chinese Culture and Art Q&A Module</h2>
+                <ul class="tech-list">
+                    <li class="tech-item">
+                        <strong>Core Technology:</strong> Retrieval-Augmented Generation (RAG)
+                    </li>
+                    <li class="tech-item">
+                        <strong>Retrieval Strategy:</strong> bge-embedding, BM25
+                    </li>
+                    <li class="tech-item">
+                        <strong>Content Processing:</strong> Segmentation & Filtering
+                    </li>
+                    <li class="tech-item">
+                        <strong>Reranking Mechanism:</strong> bge-reranker
+                    </li>
+                    <li class="tech-item">
+                        <strong>Performance Metrics:</strong> BLEU-4, ROUGE-2
+                    </li>
+                    <li class="tech-item">
+                        <strong>Iterative Process:</strong> Feedback & Recalibration
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer  -->
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" viewBox="0 0 1440 126" style="enable-background:new 0 0 1440 126; fill:#171751"
+        xml:space="preserve">
+        <path class="bg-black" d="M685.6,38.8C418.7-11.1,170.2,9.9,0,30v96h1440V30C1252.7,52.2,1010,99.4,685.6,38.8z">
+        </path>
+    </svg>
+    <footer class="bg-black pb-5" id="footer" style="background-color: #171751;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md mr-4">
+                    <i class="fas fa-copyright text-white"></i>
+                    <small class="d-block mt-3 mb-3 text-muted">THE UNIVERSITY OF HONG KONG</small>
+                    <small class="d-block mt-3 mb-3 text-muted">MSc(CompSc) Project (COMP7705)</small>
+                </div>
+                <div class="col-12 col-md mr-4">
+                    <h5 class="mb-4 text-white">Project Mentor</h5>
+                    <small class="d-block mt-3 mb-3 text-muted">Dr. Vivien CHAN</small>
+                </div>
+                <div class="col-12 col-md mr-4">
+                    <h5 class="mb-4 text-white">Group Member</h5>
+                    <small class="d-block mt-3 mb-3 text-muted">Huang Jiarui(3036382301)</small>
+                    <small class="d-block mt-3 mb-3 text-muted">Ji Ruishu(3036382038)</small>
+                    <small class="d-block mt-3 mb-3 text-muted">Li Peiying(3036450237)</small>
+                </div>
+                <div class="col-12 col-md mr-4">
+                    <h5 class="mb-4 text-white">Contact Us</h5>
+                    <small class="d-block mt-3 mb-3 text-muted">3638230@connect.hku.hk</small>
+                    <small class="d-block mt-3 mb-3 text-muted">3638203@connect.hku.hk</small>
+                    <small class="d-block mt-3 mb-3 text-muted">3645023@connect.hku.hk</small>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="./assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
+    <script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./assets/js/functions.js" type="text/javascript"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <script src="./assets/js/nav.js"></script>
+    <script type="text/javascript" src="./assets/js/echarts.js"></script>
+    <script type="text/javascript" src="./assets/js/prospect.js"></script>
+    <script type="text/javascript" src="./assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="http://www.jeendo.com/script/wow/wow.min2.js"></script>
+    <script type="text/javascript" src="./assets/js/background.js"></script>
+    <script>
+
+        new WOW().init();
+
+    </script>
+
+</body>
+
+</html>
